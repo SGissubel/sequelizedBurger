@@ -1,0 +1,82 @@
+body{
+	color: white !important;
+background: linear-gradient(
+	rgba(0, 0, 0, 0.58),
+	rgba(0, 0, 0, 0.58)),
+	url("background.jpg");
+	background-position: center center;
+}
+h1{
+	font-size: 60px !important;
+	font-family: 'Fascinate Inline', cursive  !important;
+	text-align: center;
+}
+.brg{
+	width: 25%;
+	margin-bottom: 3em;
+}
+.brgImg{
+	text-align: center;
+}
+.burgers{
+	margin-bottom: 13%;
+}
+.toEat{
+	padding-bottom: 1em;
+}
+.toDevour{
+	padding-left: 15%;
+	border-right: 1px solid;
+	float: left;
+	width: 50%;
+}
+.eatIt{
+	background: black;
+}
+.nomThis{
+	font-size: 3em;
+}
+.btnEat{
+	float: right;
+	padding-right: 10%; 
+}
+.heading{
+	font-family: 'Kalam', cursive;
+	font-size: 3.4em;
+	color: antiquewhite;
+}
+.hasDevoured{
+	padding-left: 10%;
+	float: right;
+	width: 50%;
+}
+.hasEaten{
+	font-size: 1.3em;
+	padding-left: 2em;
+}
+.toEat{
+	font-size: 1.3em;
+	padding-left: 2em;
+}
+.insert{
+	font-family: 'Kalam', cursive;
+	color: steelblue !important;
+	text-align: center;
+	margin-top: 20%;
+	border-top: 1px solid;
+}
+input{
+	width: 20em;
+	height: 5em;
+	margin: 1em;
+	text-align: center;
+}
+#addBrg{
+	font-size: 1.6em;
+}
+.inpBurg{
+	font-size: 1.3em;
+	background-image: url("bw_stripe.jpg");
+	background-size: 70%;
+
+}

@@ -1,0 +1,54 @@
+
+<h1>Welcome to the NomNom-Burger Joint!</h1>
+
+<div class="brgImg"><img class="brg" src="/assets/css/burger.jpg"></div>
+
+<div class="xs-col-12 burgers">
+
+	<div class="xs-col-6 toDevour">
+	<h2 class="heading">Eat these Burgers!</h2>
+		{{#each burgers}}
+			{{#unless this.devoured}}
+			<div class="toEat">			
+					{{this.burger_name}}
+			        <div class="btnEat">
+				        <form action="/{{this.id}}?_method=PUT" method="POST">
+				          <input type="hidden" name="devour" value="true">
+				          <button type="submit" class="eatIt">Get Your Nom On</button>
+				        </form>
+			        </div>
+			</div>
+			{{/unless}}
+		{{/each}}
+	</div>
+
+	<div class="xs-col-6 hasDevoured">
+		<h2 class="heading">You Ate These Burgers!</h2>
+		{{#each burgers}}
+			{{#if this.devoured}}
+			<div class="hasEaten">			
+					{{this.burger_name}}
+			</div>
+			{{/if}}
+		{{/each}}
+	</div>
+
+</div> <!--end burgers-->
+
+
+
+<div class="xs-col-12 insert">
+	<h2 class="nomThis">Add a Burger You Wish to Nom On</h2>
+	<form method="POST" action="/create">
+		<input class="inpBurg" type="text" name="burger_name" placeholder="Name of the Burger You Wish to Order"></input>
+		<button id="addBrg" type="submit">Add Yo' Burger'!</button>
+	</form>
+</div>
+
+
+
+
+
+
+
+<!--******************************************
