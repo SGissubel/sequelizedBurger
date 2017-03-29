@@ -1,4 +1,5 @@
 body{
+	margin-bottom: 5em !important;
 	color: white !important;
 background: linear-gradient(
 	rgba(0, 0, 0, 0.58),
@@ -31,6 +32,7 @@ h1{
 	width: 50%;
 }
 .eatIt{
+	font-size: .8em;
 	background: black;
 }
 .nomThis{
@@ -51,14 +53,15 @@ h1{
 	width: 50%;
 }
 .hasEaten{
-	font-size: 1.3em;
+	font-size: 1.8em;
 	padding-left: 2em;
 }
 .toEat{
-	font-size: 1.3em;
-	padding-left: 2em;
+	font-size: 1.8em;
+	padding-left: 1em;
 }
 .insert{
+	padding-left: 4em;
 	font-family: 'Kalam', cursive;
 	color: steelblue !important;
 	text-align: center;

@@ -1,42 +1,33 @@
-//controller files are plural
-var express = require("express");
-// Import the model (.js) to use its database functions.
-var router = express.Router();
-var burger = require('../models/burger.js');
+var models  = require('../models');
+var express = require('express');
+var router  = express.Router();
 
-//*******************************************************************************************
+
 
 router.get('/', function(req, res) {
-	burger.all(function(data){
-		var brgObj = {burgers: data};
-		console.log(brgObj);
-		// res.json({brgObj});
-		res.render('index', brgObj);
-	});	
-});
-
-router.get("/new", function(req, res) {
-	res.render('burgers/new');
-});
-
-router.post("/create", function(req, res){
-	burger.create([
-		"burger_name"
-		], [req.body.burger_name],
-		function(){
-		res.redirect('/');
+	models.Burger.findAll({
+	}).then(function(burger){
+		res.render('index', {
+			burgers: burger
+		})
 	});
+  
 });
-
-router.put("/:id", function(req, res) {
-	var condition = "id = " + req.params.id;
-	
-	burger.update({
-		devoured: req.body.devour
-	}, condition, function(){
-		res.redirect('/');
-	});
+router.post('/create', function (req, res) {
+  models.Burger.create({
+    burger_name: req.body.burger_name,
+  }).then(function(burger) {
+  	res.redirect('/')
+  });
 });
-
-
+router.put('/update/:id', function (req, res) {
+  models.Burger.update({
+    devoured: true
+  },
+  {
+	where: { id : req.params.id}
+  }).then(function() {
+  	res.redirect('/')
+  });
+});
 module.exports = router;

@@ -1,10 +1,9 @@
 var express = require("express");
+var path = require('path');
 var bodyParser = require("body-parser");
 var methodOverride = require("method-override");
-var path = require('path');
 
 var burgersController = require("./controllers/burgers_controller.js");
-
  
 var app = express();
 
