@@ -1,3 +1,6 @@
+html{
+	margin-bottom: 8em;
+}
 body{
 	margin-bottom: 5em !important;
 	color: white !important;
@@ -22,7 +25,7 @@ h1{
 .seqEd{
 	font-family: 'Fascinate Inline', cursive  !important;
 	font-size: 4em;
-	padding-top: 3em;
+	padding-top: 2em;
 }
 .sqEdLeft{
 	text-align: right;
