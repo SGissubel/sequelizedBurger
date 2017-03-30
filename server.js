@@ -26,7 +26,7 @@ var PORT = process.env.PORT || 3000;
  app.use("/burgers", burgersController);
 
 Models.sequelize.sync({ force: false }).then(function() {
-  app.listen(PORT, server_host, function() {
+  app.listen(PORT, function() {
     console.log(`Listening on PORT: ${PORT}`);
  	})
  });
