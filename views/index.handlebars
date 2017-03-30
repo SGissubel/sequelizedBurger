@@ -1,8 +1,10 @@
 
 <h1>Welcome to the NomNom-Burger Joint!</h1>
-
-<div class="brgImg"><img class="brg" src="/assets/css/burger.jpg"></div>
-
+<div>
+	<div class="col-xs-3 seqEd sqEdLeft">Sequelize Edition</div>
+	<div class="col-xs-6 brgImg"><img class="brg" src="/assets/css/burger.jpg"></div>
+	<div class="col-xs-3 seqEd sqEdRight">Sequelize Edition</div>
+</div>
 <div class="xs-col-12 burgers">
 
 	<div class="xs-col-6 toDevour">
@@ -22,7 +24,7 @@
 		{{/each}}
 	</div>
 
-	<div class="xs-col-6 hasDevoured">
+	<div class="hasDevoured">
 		<h2 class="heading">You Ate These Burgers!</h2>
 		{{#each burgers}}
 			{{#if this.devoured}}
@@ -37,7 +39,7 @@
 
 
 
-<div class="xs-col-12 insert">
+<div class="col-xs-12 insert">
 	<h2 class="nomThis">Add a Burger You Wish to Nom On</h2>
 	<form method="POST" action="/create">
 		<input class="inpBurg" type="text" name="burger_name" placeholder="Name of the Burger You Wish to Order"></input>

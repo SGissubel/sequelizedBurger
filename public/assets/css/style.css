@@ -13,11 +13,27 @@ h1{
 	text-align: center;
 }
 .brg{
-	width: 25%;
+	width: 53%;
 	margin-bottom: 3em;
 }
 .brgImg{
 	text-align: center;
+}
+.seqEd{
+	font-family: 'Fascinate Inline', cursive  !important;
+	font-size: 4em;
+	padding-top: 3em;
+}
+.sqEdLeft{
+	text-align: right;
+	-ms-transform: rotate(-40deg); /* IE 9 */
+	-webkit-transform: rotate(-40deg); /* Chrome, Safari, Opera */
+	transform: rotate(-40deg);
+}
+.sqEdRight{
+	-ms-transform: rotate(40deg); /* IE 9 */
+	-webkit-transform: rotate(40deg); /* Chrome, Safari, Opera */
+	transform: rotate(40deg);
 }
 .burgers{
 	margin-bottom: 13%;
@@ -65,7 +81,7 @@ h1{
 	font-family: 'Kalam', cursive;
 	color: steelblue !important;
 	text-align: center;
-	margin-top: 20%;
+	margin-top: 2%;
 	border-top: 1px solid;
 }
 input{
